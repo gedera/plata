@@ -40,6 +40,13 @@ Examples for return numbers in *english* and *spanish*:
 
 Enjoy!!!
 
+### Version
+0.1.0
+
+License
+----
+MIT
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/plata.
