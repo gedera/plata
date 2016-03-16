@@ -11,7 +11,7 @@ Ideal to be used to print in receipts.
 
 Add the following line in to your Gemfile:
 ```ruby
-     gem 'mool'
+     gem 'plata'
 ```
 
 Or from github:
