@@ -1,6 +1,6 @@
 # Plata
 
-Rails gem to describe a number in words for *English*, *Spanish* and *Portugues*. For use english and spanish simply define:
+Rails gem to describe a number in words for *English* and *Spanish*. For use english and spanish simply define:
 
   I18n.locale = :en (English)
   I18n.locale = :es (Espanish)
