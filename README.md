@@ -7,32 +7,36 @@ Rails gem to describe a number in words for *English*, *Spanish* and *Portugues*
 
 Ideal to be used to print in receipts.
 
-== Install
+## Install
 
 Add the following line in to your Gemfile:
-
-  gem 'plata',
+```ruby
+     gem 'mool'
+```
 
 Or from github:
-
-  gem 'plata', :git => 'git://github.com/gedera/plata.git'
+```ruby
+     gem 'plata', :git => 'git://github.com/gedera/plata.git'
+```
 
 And from the command line run:
+```console
+    $ bundle
+```
 
-  bundle install
-
-== Usage
+## Usage
 
 Examples for return numbers in *english* and *spanish*:
-
-  9736.humanize
-  => "nine thousand seven hundred thirty six" (English)
-  => "nueve mil setecientos treinta y seis" (Spanish)
-
-
-  9736.45.humanize
-  => "nine thousand seven hundred thirty six with 45/100" (English)
-  => "nueve mil setecientos treinta y seis con 45/100" (Spanish)
+```ruby
+     > 9736.humanize
+     "nine thousand seven hundred thirty six" (English)
+     "nueve mil setecientos treinta y seis" (Spanish)
+```
+```ruby
+     > 9736.45.humanize
+     "nine thousand seven hundred thirty six with 45/100" (English)
+     "nueve mil setecientos treinta y seis con 45/100" (Spanish)
+```
 
 Enjoy!!!
 
