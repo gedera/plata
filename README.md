@@ -1,34 +1,40 @@
 # Plata
 
-Translate number to words (Working for english and spanish)
+Rails gem to describe a number in words for *English*, *Spanish* and *Portugues*. For use english and spanish simply define:
 
-TODO: Delete this and the text above, and describe your gem
+  I18n.locale = :en (English)
+  I18n.locale = :es (Espanish)
 
-## Installation
+Ideal to be used to print in receipts.
 
-Add this line to your application's Gemfile:
+== Install
 
-```ruby
-gem 'plata'
-```
+Add the following line in to your Gemfile:
 
-And then execute:
+  gem 'plata',
 
-    $ bundle
+Or from github:
 
-Or install it yourself as:
+  gem 'plata', :git => 'git://github.com/gedera/plata.git'
 
-    $ gem install plata
+And from the command line run:
 
-## Usage
+  bundle install
 
-TODO: Write usage instructions here
+== Usage
 
-## Development
+Examples for return numbers in *english* and *spanish*:
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+  9736.humanize
+  => "nine thousand seven hundred thirty six" (English)
+  => "nueve mil setecientos treinta y seis" (Spanish)
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+  9736.45.humanize
+  => "nine thousand seven hundred thirty six with 45/100" (English)
+  => "nueve mil setecientos treinta y seis con 45/100" (Spanish)
+
+Enjoy!!!
 
 ## Contributing
 
