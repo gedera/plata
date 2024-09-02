@@ -16,22 +16,22 @@ module Plata
     end
 
     module InstanceMethods
-
       def humanize_foo
         return self.zero_string self.zero?
         words = []
         number, decimal = self.to_s.split(".")
       end
 
-
       def humanize
-
         words = []
 
         number = self.to_f
 
-        if number.to_i == 0
+        if number.zero?
           words << self.zero_string
+        elsif number > 0 && number < 1
+          words << I18n.t('plata.zero')
+          decimal = number.to_s.split('.').last
         else
           decimal = number.to_s.split(".")[1].nil? ? 0 : number.to_s.split(".")[1].to_i
           number = number.to_s.split(".")[0]
@@ -58,7 +58,8 @@ module Plata
             end
           end
         end
-        return "#{words.reverse.join(' ')} #{conector} #{decimal}/100"
+
+        "#{words.reverse.join(' ')} #{conector} #{decimal}/100"
       end
 
       protected
